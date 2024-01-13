@@ -139,7 +139,84 @@ header {
     margin-bottom: 24px;
 }
 
+/* Feature List  */
+.list-features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 
+.list-features-container section {
+    width: 45%;
+}
+
+hr {
+    height: 106px;
+    border: none;
+    border-left: 6px solid #FF900E;
+}
+
+.feature-headings {
+    display: flex;
+    gap: 24px;
+}
+
+.feature-headings {
+    margin-bottom: 24px;
+}
+
+.features>p {
+    margin-bottom: 30px;
+}
+
+.feature-headings h1 {
+    color: var(--Dark-01, #131313);
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.img-container {
+    width: auto;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.experience-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -100px;
+    left: -92px;
+    padding: 46px;
+    border-radius: 8px;
+    background: #FF900E;
+}
+
+.experience-box h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.experience-box p {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
 
 /* Responsive Header  */
 
@@ -173,11 +250,64 @@ header {
         padding: 20px;
 
     }
+
     .team-details div {
         width: 100%;
     }
-    .team-features{
+
+    .team-features {
         text-align: center;
+    }
+    .feature-headings{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .feature-headings h1{
+        font-size: 2rem;
+    }
+    .list-features-container{
+        flex-direction: column-reverse;
+    }
+    .features .feature-headings , .features .card-container{
+        padding: 20px;
+        width: 80%;
+    }
+    .feature-details{
+        width: 90%;
+        text-align: center;
+    }
+    .card{
+        text-align: center;
+    }
+    .feature-headings hr{
+        height: 0px;
+        width: 50%;
+        border-left: 0;
+        border-top: 6px solid #FF900E;
+    }
+    .list-features-container section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-features-container {
+        justify-content: center;
+        gap: 10px;
+    }
+    .img-container, .experience-box{
+        position: static;
+        margin-top: 20px;
+    }
+    .features-img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .img-container{
+        width: 90%;
     }
 
 }
