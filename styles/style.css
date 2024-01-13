@@ -140,6 +140,11 @@ header {
 }
 
 /* Feature List  */
+.list-of-features {
+    margin-bottom: 130px;
+    margin-top: 50px;
+}
+
 .list-features-container {
     display: flex;
     justify-content: space-between;
@@ -218,6 +223,56 @@ hr {
     line-height: 40px;
 }
 
+/* fact section style  */
+.fact-section-text {
+    width: 542px;
+}
+
+.fact-section-text h1,
+.sponsor-section-text h1 {
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.fact-section-text p {
+    margin-bottom: 100px;
+}
+
+.fact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    width: 220px;
+    height: 220px;
+}
+
+.fact-section-container {
+    margin-bottom: 180px;
+}
+
+.box h4 {
+    color: var(--Dark-02, #424242);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.box p {
+    color: var(--Dark-03, #727272);
+    font-size: 20px;
+    font-weight: 600;
+}
+
 /* Responsive Header  */
 
 @media screen and (max-width:576px) {
@@ -258,34 +313,43 @@ hr {
     .team-features {
         text-align: center;
     }
-    .feature-headings{
+
+    .feature-headings {
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
-    .feature-headings h1{
+
+    .feature-headings h1 {
         font-size: 2rem;
     }
-    .list-features-container{
+
+    .list-features-container {
         flex-direction: column-reverse;
     }
-    .features .feature-headings , .features .card-container{
+
+    .features .feature-headings,
+    .features .card-container {
         padding: 20px;
         width: 80%;
     }
-    .feature-details{
+
+    .feature-details {
         width: 90%;
         text-align: center;
     }
-    .card{
+
+    .card {
         text-align: center;
     }
-    .feature-headings hr{
+
+    .feature-headings hr {
         height: 0px;
         width: 50%;
         border-left: 0;
         border-top: 6px solid #FF900E;
     }
+
     .list-features-container section {
         width: 100%;
         display: flex;
@@ -293,21 +357,44 @@ hr {
         justify-content: center;
         align-items: center;
     }
+
     .list-features-container {
         justify-content: center;
         gap: 10px;
     }
-    .img-container, .experience-box{
+
+    .img-container,
+    .experience-box {
         position: static;
         margin-top: 20px;
     }
-    .features-img{
+
+    .features-img {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    .img-container{
+
+    .img-container {
         width: 90%;
+    }
+
+    .fact-container {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fact-section-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fact-section-text p {
+        padding: 20px;
+        margin-bottom: 10px;
+
     }
 
 }
